@@ -1,24 +1,61 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
+import { useState } from "react";
 
 export default function SquareFeetConverter() {
-  const [squareFeet, setSquareFeet] = useState<number>(272.25)
-  const marla = squareFeet / 272.25
+  const [squareFeet, setSquareFeet] = useState("");
+  const conversionRate = 272.25;
+
+  const marla =
+    squareFeet !== ""
+      ? (parseFloat(squareFeet) / conversionRate).toFixed(4)
+      : "";
 
   return (
-    <div style={{ marginTop: '20px' }}>
-      <label>Enter Square Feet:</label>
-      <input
-        type="number"
-        value={squareFeet}
-        onChange={(e) => setSquareFeet(Number(e.target.value))}
-        style={{ display: 'block', padding: '8px', marginTop: '5px', width: '100%' }}
-      />
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-24 px-6">
+      <div className="max-w-2xl mx-auto">
 
-      <h2 style={{ marginTop: '20px' }}>
-        {squareFeet} Square Feet = {marla.toFixed(4)} Marla
-      </h2>
-    </div>
-  )
+        <div className="bg-white rounded-3xl shadow-2xl p-12 transition-all duration-300">
+
+          <h1 className="text-4xl font-bold text-center mb-4">
+            Square Feet to Marla
+          </h1>
+
+          <p className="text-center text-gray-600 mb-10">
+            Instantly convert square feet into Marla using the standard
+            measurement system.
+          </p>
+
+          {/* Input */}
+          <div className="space-y-3">
+            <label className="block text-sm font-semibold text-gray-700">
+              Enter Square Feet Value
+            </label>
+
+            <input
+              type="number"
+              value={squareFeet}
+              onChange={(e) => setSquareFeet(e.target.value)}
+              placeholder="e.g. 1361.25"
+              className="w-full rounded-xl border border-gray-300 px-5 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-blue-700 transition-all"
+            />
+          </div>
+
+          {/* Result */}
+          <div className="mt-10 bg-blue-50 border border-blue-200 rounded-2xl p-8 text-center transition-all">
+            <p className="text-sm text-gray-500 mb-2">Converted Value</p>
+            <p className="text-3xl font-bold text-blue-800">
+              {marla ? `${marla} Marla` : "—"}
+            </p>
+          </div>
+
+          {/* Info */}
+          <div className="mt-10 text-center text-gray-500 text-sm">
+            1 Marla = 272.25 Square Feet
+          </div>
+
+        </div>
+      </div>
+    </main>
+  );
 }
