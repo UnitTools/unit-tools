@@ -1,68 +1,157 @@
-import Link from "next/link"
+import Link from "next/link";
+
+export const metadata = {
+  title: "Convertiva – Free Online Unit Converter",
+  description:
+    "Convert units instantly with Convertiva. Free online conversion tools for area, length, volume, and more. Fast, accurate, and easy to use.",
+};
 
 export default function HomePage() {
   return (
-    <div style={{ maxWidth: "1000px", margin: "auto", padding: "60px 20px" }}>
-      
-      {/* Hero Section */}
-      <section style={{ textAlign: "center", marginBottom: "60px" }}>
-        <h1 style={{ fontSize: "3rem", color: "#1E3A8A", fontWeight: "700", marginBottom: "15px" }}>
-          Convertiva – Professional Unit Converters
-        </h1>
-        <p style={{ fontSize: "18px", color: "#374151", maxWidth: "700px", margin: "auto" }}>
-          Convert property units, length, volume, and more quickly and accurately.
-          Designed for professionals, builders, and investors.
-        </p>
+    <main className="bg-gray-50 min-h-screen">
+
+      {/* HERO SECTION */}
+      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-24 px-6">
+        <div className="max-w-5xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            Professional Online Unit Conversion Tools
+          </h1>
+
+          <p className="text-lg md:text-xl text-blue-100 mb-8">
+            Fast, accurate, and easy-to-use converters for area, length, volume,
+            and more. Built for students, engineers, real estate professionals,
+            and everyday users worldwide.
+          </p>
+
+          <Link
+            href="/area"
+            className="inline-block bg-white text-blue-900 font-semibold px-8 py-3 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300"
+          >
+            Start Converting
+          </Link>
+        </div>
       </section>
 
-      {/* Tools Grid */}
-      <section
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-          gap: "25px",
-        }}
-      >
-        <Link href="/marla-to-square-feet" style={{ textDecoration: "none" }}>
-          <div
-            style={{
-              backgroundColor: "#fff",
-              padding: "25px",
-              borderRadius: "16px",
-              border: "1px solid #E5E7EB",
-              boxShadow: "0 4px 12px rgba(0,0,0,0.05)",
-              transition: "transform 0.2s",
-            }}
-          >
-            <h2 style={{ color: "#1E3A8A", fontWeight: "600", marginBottom: "10px" }}>
-              Marla → Square Feet
-            </h2>
-            <p style={{ color: "#4B5563", fontSize: "14px" }}>
-              Convert Marla into Square Feet instantly using Pakistan standard (1 Marla = 272.25 sq ft).
-            </p>
-          </div>
-        </Link>
+      {/* CATEGORY SECTION */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
 
-        <Link href="/square-feet-to-marla" style={{ textDecoration: "none" }}>
-          <div
-            style={{
-              backgroundColor: "#fff",
-              padding: "25px",
-              borderRadius: "16px",
-              border: "1px solid #E5E7EB",
-              boxShadow: "0 4px 12px rgba(0,0,0,0.05)",
-              transition: "transform 0.2s",
-            }}
-          >
-            <h2 style={{ color: "#1E3A8A", fontWeight: "600", marginBottom: "10px" }}>
-              Square Feet → Marla
-            </h2>
-            <p style={{ color: "#4B5563", fontSize: "14px" }}>
-              Convert Square Feet into Marla quickly and accurately for property planning.
-            </p>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Conversion Categories
+          </h2>
+
+          <div className="grid md:grid-cols-4 gap-8">
+
+            {/* Area */}
+            <Link href="/area" className="group bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+              <h3 className="text-xl font-semibold mb-4 group-hover:text-blue-700 transition-colors">
+                Area Converters
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Convert between square feet, square meters, acres, marla,
+                hectares, and more.
+              </p>
+            </Link>
+
+            {/* Length */}
+            <Link href="/length" className="group bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+              <h3 className="text-xl font-semibold mb-4 group-hover:text-blue-700 transition-colors">
+                Length Converters
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Convert meters, feet, inches, kilometers, miles, centimeters,
+                and more.
+              </p>
+            </Link>
+
+            {/* Volume */}
+            <Link href="/volume" className="group bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+              <h3 className="text-xl font-semibold mb-4 group-hover:text-blue-700 transition-colors">
+                Volume Converters
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Convert liters, milliliters, gallons, cubic meters, and more.
+              </p>
+            </Link>
+
+            {/* Weight */}
+            <Link href="/weight" className="group bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+              <h3 className="text-xl font-semibold mb-4 group-hover:text-blue-700 transition-colors">
+                Weight Converters
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Convert kilograms, grams, pounds, ounces, and more.
+              </p>
+            </Link>
+
           </div>
-        </Link>
+        </div>
       </section>
-    </div>
-  )
+
+      {/* FEATURED TOOLS */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Featured Tools
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+
+            <Link
+              href="/marla-to-square-feet"
+              className="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            >
+              <h3 className="text-xl font-semibold mb-2">
+                Marla to Square Feet Converter
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Convert Marla to square feet instantly using standard
+                conversion values.
+              </p>
+            </Link>
+
+            <Link
+              href="/square-feet-to-marla"
+              className="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            >
+              <h3 className="text-xl font-semibold mb-2">
+                Square Feet to Marla Converter
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Convert square feet to Marla easily and accurately.
+              </p>
+            </Link>
+
+          </div>
+        </div>
+      </section>
+
+      {/* SEO CONTENT SECTION */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto text-gray-700 leading-relaxed">
+
+          <h2 className="text-2xl font-bold mb-6">
+            Why Choose Convertiva?
+          </h2>
+
+          <p className="mb-4">
+            Convertiva is a professional online unit conversion platform designed
+            to provide fast, accurate, and reliable calculations. Whether you are
+            working in real estate, engineering, academics, construction, or
+            everyday measurements, our tools ensure precision and simplicity.
+          </p>
+
+          <p>
+            Our mission is to build a universal conversion system that supports
+            global measurement standards while remaining intuitive and easy to
+            use. With continuous expansion across multiple categories, Convertiva
+            aims to become a trusted resource for users worldwide.
+          </p>
+
+        </div>
+      </section>
+
+    </main>
+  );
 }
