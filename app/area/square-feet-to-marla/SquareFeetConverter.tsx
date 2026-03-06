@@ -44,7 +44,7 @@ export default function SquareFeetConverter() {
           {/* Result */}
           <div className="mt-10 bg-blue-50 border border-blue-200 rounded-2xl p-8 text-center transition-all">
             <p className="text-sm text-gray-500 mb-2">Converted Value</p>
-            <p className="text-3xl font-bold text-blue-800">
+            <p className="text-3xl font-bold text-blue-800 transition-all duration-300">
               {marla ? `${marla} Marla` : "—"}
             </p>
           </div>
@@ -52,6 +52,42 @@ export default function SquareFeetConverter() {
           {/* Info */}
           <div className="mt-10 text-center text-gray-500 text-sm">
             1 Marla = 272.25 Square Feet
+          </div>
+
+          {/* FAQ Section */}
+          <div className="mt-16">
+            <h2 className="text-2xl font-bold mb-6 text-center">
+              Frequently Asked Questions
+            </h2>
+
+            <div className="space-y-6 text-gray-700 leading-relaxed">
+              <div>
+                <h3 className="font-semibold">
+                  How many Marla are in 1 square foot?
+                </h3>
+                <p>
+                  One square foot equals approximately 0.003673 Marla based on the Pakistan standard where 1 Marla equals 272.25 square feet.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">
+                  What is the formula to convert square feet to Marla?
+                </h3>
+                <p>
+                  To convert square feet into Marla, divide the square feet value by 272.25.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">
+                  Where is Marla measurement used?
+                </h3>
+                <p>
+                  Marla is commonly used in Pakistan and South Asia for land and property measurements in real estate transactions.
+                </p>
+              </div>
+            </div>
           </div>
 
         </div>

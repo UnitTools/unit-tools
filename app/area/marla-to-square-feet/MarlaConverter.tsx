@@ -42,7 +42,7 @@ export default function MarlaConverter() {
           {/* Result */}
           <div className="mt-10 bg-blue-50 border border-blue-200 rounded-2xl p-8 text-center transition-all">
             <p className="text-sm text-gray-500 mb-2">Converted Value</p>
-            <p className="text-3xl font-bold text-blue-800">
+            <p className="text-3xl font-bold text-blue-800 transition-all duration-300">
               {squareFeet ? `${squareFeet} sq ft` : "—"}
             </p>
           </div>
@@ -50,6 +50,42 @@ export default function MarlaConverter() {
           {/* Info */}
           <div className="mt-10 text-center text-gray-500 text-sm">
             1 Marla = 272.25 Square Feet
+          </div>
+
+          {/* FAQ Section */}
+          <div className="mt-16">
+            <h2 className="text-2xl font-bold mb-6 text-center">
+              Frequently Asked Questions
+            </h2>
+
+            <div className="space-y-6 text-gray-700 leading-relaxed">
+              <div>
+                <h3 className="font-semibold">
+                  How many square feet are in 1 Marla?
+                </h3>
+                <p>
+                  One Marla equals 272.25 square feet according to the standard measurement used in Pakistan.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">
+                  Is Marla measurement the same worldwide?
+                </h3>
+                <p>
+                  No, Marla size may differ historically by region. However, the widely accepted modern standard in Pakistan is 272.25 square feet.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">
+                  Who uses Marla measurement?
+                </h3>
+                <p>
+                  Marla is commonly used in real estate transactions, property listings, and land measurements across Pakistan and parts of South Asia.
+                </p>
+              </div>
+            </div>
           </div>
 
         </div>
