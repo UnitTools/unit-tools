@@ -1,6 +1,8 @@
 "use client"
 
 import { useState } from "react"
+import RelatedConverters from "@/components/RelatedConverters"
+import ConversionTable from "@/components/ConversionTable"
 
 export default function SqMeterToSqFtConverter() {
 
@@ -86,8 +88,13 @@ export default function SqMeterToSqFtConverter() {
 
         </div>
 
-      </div>
-
+      </div><ConversionTable
+        title="Square Feet to Square Meters Conversion Table"
+        fromUnit="sq ft"
+        toUnit="m²"
+        rate={0.092903}
+      />
+      <RelatedConverters />
     </div>
   )
 }

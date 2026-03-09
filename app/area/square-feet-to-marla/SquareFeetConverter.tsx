@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import RelatedConverters from "@/components/RelatedConverters"
+import ConversionTable from "@/components/ConversionTable"
 
 export default function SquareFeetConverter() {
   const [squareFeet, setSquareFeet] = useState("");
@@ -88,8 +90,13 @@ export default function SquareFeetConverter() {
                 </p>
               </div>
             </div>
-          </div>
-
+          </div><ConversionTable
+            title="Square Feet to Marla Conversion Table"
+            fromUnit="sq ft"
+            toUnit="Marla"
+            rate={0.003673}
+          />
+          <RelatedConverters />
         </div>
       </div>
     </main>
