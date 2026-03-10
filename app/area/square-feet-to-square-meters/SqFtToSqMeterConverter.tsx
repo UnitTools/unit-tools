@@ -3,6 +3,7 @@
 import { useState } from "react"
 import RelatedConverters from "@/components/RelatedConverters"
 import ConversionTable from "@/components/ConversionTable"
+import Breadcrumb from "@/components/Breadcrumb"
 
 export default function SqFtToSqMeterConverter() {
     const [sqft, setSqft] = useState("")
@@ -10,6 +11,12 @@ export default function SqFtToSqMeterConverter() {
 
     return (
         <div className="max-w-3xl mx-auto px-6 py-16">
+
+            <Breadcrumb
+                category="Area"
+                categoryUrl="/area"
+                page="Square-Feet to Square-Meter Converter"
+            />
 
             <h1 className="text-4xl font-bold text-center mb-10">
                 Square Feet to Square Meters Converter

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import RelatedConverters from "@/components/RelatedConverters"
 import ConversionTable from "@/components/ConversionTable"
+import Breadcrumb from "@/components/Breadcrumb"
 
 export default function MarlaConverter() {
   const [marla, setMarla] = useState("");
@@ -14,6 +15,11 @@ export default function MarlaConverter() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-24 px-6">
       <div className="max-w-2xl mx-auto">
+        <Breadcrumb
+          category="Area"
+          categoryUrl="/area"
+          page="Marla to Square-Feet Converter"
+        />
 
         <div className="bg-white rounded-3xl shadow-2xl p-12 transition-all duration-300">
 
