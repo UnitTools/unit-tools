@@ -4,22 +4,22 @@ const converters = [
   {
     title: "Marla to Square Feet",
     description: "Convert Marla into square feet instantly.",
-    url: "/area/marla-to-square-feet",
+    url: "/converters/area/marla-to-square-feet",
   },
   {
     title: "Square Feet to Marla",
     description: "Convert square feet into Marla easily.",
-    url: "/area/square-feet-to-marla",
+    url: "/converters/area/square-feet-to-marla",
   },
   {
     title: "Square Feet to Square Meters",
     description: "Convert sq ft into square meters.",
-    url: "/area/square-feet-to-square-meters",
+    url: "/converters/area/square-feet-to-square-meters",
   },
   {
     title: "Square Meters to Square Feet",
     description: "Convert square meters into sq ft.",
-    url: "/area/square-meters-to-square-feet",
+    url: "/converters/area/square-meters-to-square-feet",
   },
 ]
 

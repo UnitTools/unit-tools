@@ -24,7 +24,7 @@ export default function HomePage() {
           </p>
 
           <Link
-            href="/area"
+            href="/converters"
             className="inline-block bg-white text-blue-900 font-semibold px-8 py-3 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300"
           >
             Start Converting
@@ -43,7 +43,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-4 gap-8">
 
             {/* Area */}
-            <Link href="/area" className="group bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <Link href="/converters/area" className="group bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
               <h3 className="text-xl font-semibold mb-4 group-hover:text-blue-700 transition-colors">
                 Area Converters
               </h3>
@@ -54,7 +54,7 @@ export default function HomePage() {
             </Link>
 
             {/* Length */}
-            <Link href="/length" className="group bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <Link href="/converters/length" className="group bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
               <h3 className="text-xl font-semibold mb-4 group-hover:text-blue-700 transition-colors">
                 Length Converters
               </h3>
@@ -65,7 +65,7 @@ export default function HomePage() {
             </Link>
 
             {/* Volume */}
-            <Link href="/volume" className="group bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <Link href="/converters/volume" className="group bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
               <h3 className="text-xl font-semibold mb-4 group-hover:text-blue-700 transition-colors">
                 Volume Converters
               </h3>
@@ -75,7 +75,7 @@ export default function HomePage() {
             </Link>
 
             {/* Weight */}
-            <Link href="/weight" className="group bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <Link href="/converters/weight" className="group bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
               <h3 className="text-xl font-semibold mb-4 group-hover:text-blue-700 transition-colors">
                 Weight Converters
               </h3>
@@ -99,7 +99,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-8">
 
             <Link
-              href="/marla-to-square-feet"
+              href="/converters/area/marla-to-square-feet"
               className="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >
               <h3 className="text-xl font-semibold mb-2">
@@ -112,7 +112,7 @@ export default function HomePage() {
             </Link>
 
             <Link
-              href="/square-feet-to-marla"
+              href="/converters/area/square-feet-to-marla"
               className="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >
               <h3 className="text-xl font-semibold mb-2">

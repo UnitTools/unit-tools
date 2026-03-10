@@ -15,7 +15,7 @@ export default function SqMeterToSqFtConverter() {
 
       <Breadcrumb
         category="Area"
-        categoryUrl="/area"
+        categoryUrl="/converters/area"
         page="Square-Meter to Square-Feet Converter"
       />
 

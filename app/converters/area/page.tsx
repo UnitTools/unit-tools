@@ -4,22 +4,22 @@ const converters = [
   {
     title: "Marla to Square Feet",
     description: "Convert Marla to square feet instantly using the Pakistan standard.",
-    url: "/area/marla-to-square-feet",
+    url: "/converters/area/marla-to-square-feet",
   },
   {
     title: "Square Feet to Marla",
     description: "Convert square feet into Marla quickly and accurately.",
-    url: "/area/square-feet-to-marla",
+    url: "/converters/area/square-feet-to-marla",
   },
   {
     title: "Square Feet to Square Meters",
     description: "Convert square feet to square meters easily.",
-    url: "/area/square-feet-to-square-meters",
+    url: "/converters/area/square-feet-to-square-meters",
   },
   {
     title: "Square Meters to Square Feet",
     description: "Convert square meters into square feet instantly.",
-    url: "/area/square-meters-to-square-feet",
+    url: "/converters/area/square-meters-to-square-feet",
   },
 ]
 

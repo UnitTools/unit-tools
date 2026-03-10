@@ -15,13 +15,13 @@ export default function MarlaConverter() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-24 px-6">
       <div className="max-w-2xl mx-auto">
-        <Breadcrumb
-          category="Area"
-          categoryUrl="/area"
-          page="Marla to Square-Feet Converter"
-        />
 
         <div className="bg-white rounded-3xl shadow-2xl p-12 transition-all duration-300">
+          <Breadcrumb
+          category="Area"
+          categoryUrl="/converters/area"
+          page="Marla to Square-Feet Converter"
+        />
 
           <h1 className="text-4xl font-bold text-center mb-4">
             Marla to Square Feet

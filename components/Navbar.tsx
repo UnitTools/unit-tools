@@ -26,14 +26,14 @@ export default function Navbar() {
         {/* Navigation Links */}
         <div className="hidden md:flex items-center gap-8 text-white text-sm font-medium">
           <Link
-            href="/area/marla-to-square-feet"
+            href="/converters/area/marla-to-square-feet"
             className="hover:text-blue-200 transition-colors duration-200"
           >
             Maral to Square-Feet Converter
           </Link>
 
           <Link
-            href="/area/square-feet-to-marla"
+            href="/converters/area/square-feet-to-marla"
             className="hover:text-blue-200 transition-colors duration-200"
           >
             Square-Feet to Marla Converter
