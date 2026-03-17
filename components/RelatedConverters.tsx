@@ -21,6 +21,11 @@ const converters = [
     description: "Convert square meters into sq ft.",
     url: "/converters/area/square-meters-to-square-feet",
   },
+  {
+    title: "Square Feet to Acres",
+    description: "Convert square meters into square feet instantly.",
+    url: "/converters/area/square-feet-to-acres",
+  },
 ]
 
 export default function RelatedConverters() {

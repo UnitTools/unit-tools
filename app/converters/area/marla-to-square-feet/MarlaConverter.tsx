@@ -21,7 +21,7 @@ export default function MarlaConverter() {
           category="Area"
           categoryUrl="/converters/area"
           page="Marla to Square-Feet Converter"
-        />
+          />
 
           <h1 className="text-4xl font-bold text-center mb-4">
             Marla to Square Feet

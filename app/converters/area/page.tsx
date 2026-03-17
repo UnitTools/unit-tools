@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { title } from "process"
 
 const converters = [
   {
@@ -20,6 +21,11 @@ const converters = [
     title: "Square Meters to Square Feet",
     description: "Convert square meters into square feet instantly.",
     url: "/converters/area/square-meters-to-square-feet",
+  },
+  {
+    title: "Square Feet to Acres",
+    description: "Convert square feet into acres instantly and accurately.",
+    url: "/converters/area/square-feet-to-acres",
   },
 ]
 
